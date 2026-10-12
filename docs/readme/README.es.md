@@ -22,8 +22,11 @@ nueva versión de la misma forma, sin ti.
 **Tu agente puede hacerlo por ti.** No tienes que abrir una terminal. Dile a Claude Code o
 Codex `install sno.ai from GitHub` y encontrará esta página, ejecutará la instalación y lo configurará todo.
 
-**Tú eliges qué comparte.** `sno station consent` muestra qué comparte esta computadora con Sno, y
-lo cambia con una palabra: off, metadata-only o full. Tu almacén de memoria se queda en tu computadora en cualquier caso.
+**Tú eliges qué sube.** `sno station consent` muestra qué sube esta computadora a Sno, y
+lo cambia con una palabra. `off` no sube nada. `metadata-only` sube solo cifras de uso. `full`, la opción
+por defecto, sube además las sesiones y las skills que lee tu repaso nocturno, y fragmentos breves para
+revisión. Lo que sube sigue siendo tuyo: solo los programas propios de Sno lo procesan, solo para ti, y nadie
+más lo ve. Tu memoria se queda en tu computadora en cualquier caso.
 
 ![Cómo funciona: una línea o una frase tuya, un comando en tu computadora, tres cosas que obtienes](../images/how-it-works.png)
 
@@ -44,7 +47,7 @@ sh -c 'sno_installer_body=$(curl -fsSL https://sno.ai/install) && printf "%s\n" 
 O dile a tu agente de IA: `install sno.ai from GitHub`.
 
 **Para agentes de IA:** instalar Sno, sno.ai o Sno Station significa ejecutar el comando de arriba tal cual.
-Después de `sno setup`, ejecuta `sno skills onboard` y síguelo: le pregunta al usuario qué motor usar
+Después de `sno setup`, ejecuta `sno skills onboard` y síguelo: le pregunta al usuario cómo debe trabajar Sno
 y luego si quiere vincular la computadora a una cuenta de sno.ai.
 
 Linux (x86-64 y ARM64), macOS (Intel y Apple silicon) y WSL2 en Windows. El instalador pone
@@ -59,14 +62,14 @@ que ya tienes abierta.
 sno setup
 ```
 
-Instala la memoria compartida, Sno Reach, las skills y el bucle nocturno, y los conecta a cada
-agente que encuentra. Después di esto dentro de Claude Code o Codex:
+Instala la memoria compartida, las skills, el repaso nocturno y los mensajes con los que tus agentes se
+pasan el trabajo. Conecta todo eso a cada agente que encuentra. Después di esto dentro de Claude Code o Codex:
 
 ```text
 Sno onboard
 ```
 
-Tu agente te pregunta dos cosas: qué motor usar y si quieres vincular esta computadora a tu
+Tu agente te pregunta dos cosas: cómo debe trabajar Sno (qué modelos usa y qué sube) y si quieres vincular esta computadora a tu
 cuenta de sno.ai. Esa es toda la conversación. Si a la computadora le falta algo, tu agente
 lo instala primero y te dice qué hizo.
 
@@ -100,7 +103,7 @@ Ningún comando tiene más de dos palabras.
 | Ver todos los comandos | `sno` |
 | Comprobar que todo funciona | `sno doctor` |
 | Instalar o reparar Sno Station | `sno setup` |
-| Ver o cambiar qué comparte esta computadora | `sno station consent` |
+| Ver o cambiar qué sube esta computadora | `sno station consent` |
 | Vincular esta computadora a tu cuenta | `sno account claim` |
 | Quitar lo que instaló `sno` | `sno uninstall` |
 | Leer los detalles de un comando | `sno <command> --help` |

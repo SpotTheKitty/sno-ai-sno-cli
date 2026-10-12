@@ -15,7 +15,7 @@
 
 **에이전트가 대신 해 줄 수 있습니다.** 터미널을 열 필요조차 없습니다. Claude Code나 Codex에게 `install sno.ai from GitHub`라고 말하면, 이 페이지를 찾아 설치를 실행하고 모든 것을 설정합니다.
 
-**무엇을 공유할지는 여러분이 정합니다.** `sno station consent`는 이 컴퓨터가 Sno와 무엇을 공유하는지 보여 주고, off, metadata-only, full 중 한 단어로 바꿉니다. 어느 쪽이든 메모리 저장소는 여러분의 컴퓨터에 남습니다.
+**무엇을 업로드할지는 여러분이 정합니다.** `sno station consent`는 이 컴퓨터가 Sno에 무엇을 업로드하는지 보여 주고, 한 단어로 바꿉니다. `off`는 아무것도 업로드하지 않습니다. `metadata-only`는 사용 횟수 같은 통계만 업로드합니다. `full`(기본값)은 여기에 더해 야간 회고가 읽는 세션과 스킬, 그리고 검토용 짧은 발췌도 업로드합니다. 업로드한 내용은 여러분의 것입니다. Sno의 자체 프로그램만 여러분만을 위해 처리하고, 다른 누구도 보지 않습니다. 어느 쪽이든 메모리는 여러분의 컴퓨터에 남습니다.
 
 ![작동 방식: 여러분의 한 줄 또는 한 문장, 여러분의 컴퓨터에서 실행되는 하나의 명령, 여러분이 얻는 세 가지](../images/how-it-works.png)
 
@@ -33,7 +33,7 @@ sh -c 'sno_installer_body=$(curl -fsSL https://sno.ai/install) && printf "%s\n" 
 
 또는 AI 에이전트에게 이렇게 말하세요: `install sno.ai from GitHub`.
 
-**AI 에이전트에게:** Sno, sno.ai 또는 Sno Station을 설치한다는 것은 위의 명령을 그대로 실행한다는 뜻입니다. `sno setup` 다음에 `sno skills onboard`를 실행하고 그 안내를 따르세요: 사용자에게 어떤 엔진을 실행할지 묻고, 이어서 이 컴퓨터를 sno.ai 계정에 연결할지 묻습니다.
+**AI 에이전트에게:** Sno, sno.ai 또는 Sno Station을 설치한다는 것은 위의 명령을 그대로 실행한다는 뜻입니다. `sno setup` 다음에 `sno skills onboard`를 실행하고 그 안내를 따르세요: 사용자에게 Sno가 어떻게 일할지 묻고, 이어서 이 컴퓨터를 sno.ai 계정에 연결할지 묻습니다.
 
 Linux(x86-64와 ARM64), macOS(Intel과 Apple silicon), Windows의 WSL2에서 동작합니다. 설치 프로그램은 `sno`를 `~/.local/bin`에 넣고 전체 경로를 출력합니다. 새 터미널을 열거나, 지금 쓰고 있는 터미널에서는 그 경로를 사용하세요.
 
@@ -45,13 +45,13 @@ Linux(x86-64와 ARM64), macOS(Intel과 Apple silicon), Windows의 WSL2에서 동
 sno setup
 ```
 
-공유 메모리, Sno Reach, 스킬, 야간 루프를 설치하고, 찾은 모든 에이전트에 연결합니다. 그런 다음 Claude Code나 Codex 안에서 이렇게 말하세요:
+공유 메모리, 스킬, 야간 회고, 그리고 에이전트끼리 작업을 넘겨줄 때 쓰는 메시지 기능을 설치하고, 찾은 모든 에이전트에 연결합니다. 그런 다음 Claude Code나 Codex 안에서 이렇게 말하세요:
 
 ```text
 Sno onboard
 ```
 
-에이전트는 두 가지를 묻습니다: 어떤 엔진을 실행할지, 그리고 이 컴퓨터를 여러분의 sno.ai 계정에 연결할지. 대화는 그게 전부입니다. 컴퓨터에 빠진 것이 있으면 에이전트가 먼저 설치하고 무엇을 했는지 알려 줍니다.
+에이전트는 두 가지를 묻습니다: Sno가 어떻게 일할지(어떤 모델을 쓰고 무엇을 업로드할지), 그리고 이 컴퓨터를 여러분의 sno.ai 계정에 연결할지. 대화는 그게 전부입니다. 컴퓨터에 빠진 것이 있으면 에이전트가 먼저 설치하고 무엇을 했는지 알려 줍니다.
 
 ## sno.ai 계정 연결
 
@@ -78,7 +78,7 @@ sno account claim
 | 모든 명령 보기 | `sno` |
 | 모든 것이 작동하는지 확인 | `sno doctor` |
 | Sno Station 설치 또는 복구 | `sno setup` |
-| 이 컴퓨터가 공유하는 내용 보기 또는 변경 | `sno station consent` |
+| 이 컴퓨터가 업로드하는 내용 보기 또는 변경 | `sno station consent` |
 | 이 컴퓨터를 계정에 연결 | `sno account claim` |
 | `sno`가 설치한 것 제거 | `sno uninstall` |
 | 명령 하나의 세부 내용 읽기 | `sno <command> --help` |

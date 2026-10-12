@@ -15,7 +15,7 @@
 
 **您的代理人可以替您完成。** 您完全不必打開終端機。對 Claude Code 或 Codex 說 `install sno.ai from GitHub`，它就會找到這個頁面、執行安裝，並把一切設定好。
 
-**由您決定要分享什麼。** `sno station consent` 會顯示這台電腦與 Sno 分享了什麼，而且只用一個詞就能修改：off、metadata-only 或 full。不論選哪一種，您的記憶儲存都會留在您的電腦上。
+**由您決定要上傳什麼。** `sno station consent` 會顯示這台電腦上傳到 Sno 的內容，而且只用一個詞就能修改。`off` 什麼都不上傳。`metadata-only` 只上傳使用次數這類統計。`full`（預設）還會上傳每晚回顧讀到的對話紀錄和技能，以及一小段供審查的對話摘錄。上傳的內容仍然歸您所有，只由 Sno 自己的程式為您處理，不會給任何人看。不論選哪一種，您的記憶都會留在您的電腦上。
 
 ![運作方式：您說一行指令或一句話，您的電腦執行一個指令，您得到三樣東西](../images/how-it-works.png)
 
@@ -34,7 +34,7 @@ sh -c 'sno_installer_body=$(curl -fsSL https://sno.ai/install) && printf "%s\n" 
 
 或是告訴您的 AI 代理人：`install sno.ai from GitHub`。
 
-**給 AI 代理人：** 安裝 Sno、sno.ai 或 Sno Station，指的都是照原樣執行上面這條指令。`sno setup` 之後，執行 `sno skills onboard` 並照著它的指引操作：它會先問使用者要執行哪個引擎，再問是否把這台電腦連結到 sno.ai 帳號。
+**給 AI 代理人：** 安裝 Sno、sno.ai 或 Sno Station，指的都是照原樣執行上面這條指令。`sno setup` 之後，執行 `sno skills onboard` 並照著它的指引操作：它會先問使用者想讓 Sno 怎麼運作，再問是否把這台電腦連結到 sno.ai 帳號。
 
 支援 Linux（x86-64 與 ARM64）、macOS（Intel 與 Apple silicon），以及 Windows 上的 WSL2。安裝程式會把 `sno` 放到 `~/.local/bin`，並印出它的完整路徑。請開啟新的終端機，或在目前的終端機裡使用這個路徑。
 
@@ -46,13 +46,13 @@ sh -c 'sno_installer_body=$(curl -fsSL https://sno.ai/install) && printf "%s\n" 
 sno setup
 ```
 
-它會安裝共用記憶、Sno Reach、技能和夜間循環，並把它們接到它找到的每一個代理人上。接著在 Claude Code 或 Codex 裡說：
+它會安裝共用記憶、技能、每晚回顧，以及代理人之間互相傳遞工作用的訊息功能，並把它們接到它找到的每一個代理人上。接著在 Claude Code 或 Codex 裡說：
 
 ```text
 Sno onboard
 ```
 
-您的代理人會問您兩件事：要執行哪個引擎，以及是否要把這台電腦連結到您的 sno.ai 帳號。整段對話就這樣。電腦缺少的任何東西，您的代理人都會先裝好，並告訴您它做了什麼。
+您的代理人會問您兩件事：想讓 Sno 怎麼運作（用哪些模型、上傳什麼），以及是否要把這台電腦連結到您的 sno.ai 帳號。整段對話就這樣。電腦缺少的任何東西，您的代理人都會先裝好，並告訴您它做了什麼。
 
 ## 連結您的 sno.ai 帳號
 
@@ -79,7 +79,7 @@ sno account claim
 | 查看所有指令 | `sno` |
 | 檢查一切是否正常 | `sno doctor` |
 | 安裝或修復 Sno Station | `sno setup` |
-| 查看或修改這台電腦分享的內容 | `sno station consent` |
+| 查看或修改這台電腦上傳的內容 | `sno station consent` |
 | 把這台電腦連結到您的帳號 | `sno account claim` |
 | 移除 `sno` 安裝的內容 | `sno uninstall` |
 | 閱讀某個指令的詳細說明 | `sno <command> --help` |

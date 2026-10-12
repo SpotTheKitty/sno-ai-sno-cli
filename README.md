@@ -22,8 +22,11 @@ same way, without you.
 **Your agent can do it for you.** You don't have to open a terminal at all. Tell Claude Code or
 Codex `install sno.ai from GitHub` and it finds this page, runs the install, and sets everything up.
 
-**You choose what it shares.** `sno station consent` shows what this computer shares with Sno, and
-changes it with one word: off, metadata-only or full. Your memory store stays on your computer either way.
+**You choose what it uploads.** `sno station consent` shows what this computer uploads to Sno, and
+changes it with one word. `off` uploads nothing. `metadata-only` uploads usage counts only. `full`, the
+default, also uploads the sessions and skills your nightly review reads, and short excerpts for review.
+What it uploads stays yours: only Sno's own programs process it, for you alone, and nobody else sees it.
+Your memory stays on your computer either way.
 
 ![How it works: one line or one sentence from you, one command on your computer, three things you get](docs/images/how-it-works.png)
 
@@ -44,7 +47,7 @@ sh -c 'sno_installer_body=$(curl -fsSL https://sno.ai/install) && printf "%s\n" 
 Or tell your AI agent: `install sno.ai from GitHub`.
 
 **For AI agents:** installing Sno, sno.ai or Sno Station means running the command above as it is. After `sno setup`, run
-`sno skills onboard` and follow it: it asks the user which engine to run, then whether to link the
+`sno skills onboard` and follow it: it asks the user how Sno should work, then whether to link the
 computer to a sno.ai account.
 
 Linux (x86-64 and ARM64), macOS (Intel and Apple silicon), and WSL2 on Windows. The installer puts
@@ -59,15 +62,16 @@ are in.
 sno setup
 ```
 
-It installs the shared memory, Sno Reach, the skills and the nightly loop, and wires them into every
-agent it finds. Then say this inside Claude Code or Codex:
+It installs the shared memory, the skills, the nightly review, and the messaging your agents use to
+pass work to each other. It wires all of them into every agent it finds. Then say this inside Claude
+Code or Codex:
 
 ```text
 Sno onboard
 ```
 
-Your agent asks you two things: which engine to run, and whether to link this computer to your
-sno.ai account. That is the whole conversation. Anything the computer is missing, your agent
+Your agent asks you two things: how Sno should work (which models it uses and what it uploads), and
+whether to link this computer to your sno.ai account. That is the whole conversation. Anything the computer is missing, your agent
 installs first and tells you what it did.
 
 ## Connect your sno.ai account
@@ -100,7 +104,7 @@ deeper than two words.
 | See every command | `sno` |
 | Check that everything works | `sno doctor` |
 | Install or repair Sno Station | `sno setup` |
-| See or change what this computer shares | `sno station consent` |
+| See or change what this computer uploads | `sno station consent` |
 | Link this computer to your account | `sno account claim` |
 | Remove what `sno` installed | `sno uninstall` |
 | Read the details of one command | `sno <command> --help` |

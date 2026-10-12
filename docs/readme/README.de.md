@@ -24,9 +24,11 @@ Agenten bekommen die neue Version auf dem gleichen Weg, ohne Sie.
 Codex `install sno.ai from GitHub`, und er findet diese Seite, führt die Installation aus und richtet
 alles ein.
 
-**Sie entscheiden, was geteilt wird.** `sno station consent` zeigt, was dieser Rechner mit Sno teilt, und
-ändert es mit einem Wort: off, metadata-only oder full. Ihr Memory Store bleibt in jedem Fall auf Ihrem
-Rechner.
+**Sie entscheiden, was hochgeladen wird.** `sno station consent` zeigt, was dieser Rechner zu Sno hochlädt, und
+ändert es mit einem Wort. `off` lädt nichts hoch. `metadata-only` lädt nur Nutzungszahlen hoch. `full`, die
+Voreinstellung, lädt außerdem die Sitzungen und Skills hoch, die Ihr nächtlicher Rückblick liest, und kurze
+Auszüge zur Prüfung. Was hochgeladen wird, bleibt Ihres: Nur Snos eigene Programme verarbeiten es, nur für
+Sie, und niemand sonst sieht es. Ihr Gedächtnis bleibt in jedem Fall auf Ihrem Rechner.
 
 ![So funktioniert es: eine Zeile oder ein Satz von Ihnen, ein Befehl auf Ihrem Rechner, drei Dinge, die Sie bekommen](../images/how-it-works.png)
 
@@ -48,7 +50,7 @@ Oder sagen Sie Ihrem KI-Agenten: `install sno.ai from GitHub`.
 
 **Für KI-Agenten:** Sno, sno.ai oder Sno Station zu installieren heißt, den Befehl oben unverändert auszuführen.
 Führen Sie nach `sno setup` den Befehl `sno skills onboard` aus und folgen Sie ihm: Er fragt den Nutzer,
-welche Engine laufen soll, und dann, ob der Rechner mit einem sno.ai-Konto verknüpft werden soll.
+wie Sno arbeiten soll, und dann, ob der Rechner mit einem sno.ai-Konto verknüpft werden soll.
 
 Linux (x86-64 und ARM64), macOS (Intel und Apple Silicon) und WSL2 unter Windows. Der Installer legt
 `sno` in `~/.local/bin` ab und gibt den vollständigen Pfad aus. Öffnen Sie ein neues Terminal, oder
@@ -63,14 +65,15 @@ von ihnen:
 sno setup
 ```
 
-Er installiert das gemeinsame Gedächtnis, Sno Reach, die Skills und die nächtliche Schleife und bindet sie
-in jeden Agenten ein, den er findet. Sagen Sie dann in Claude Code oder Codex:
+Er installiert das gemeinsame Gedächtnis, die Skills, den nächtlichen Rückblick und die Nachrichten, mit
+denen Ihre Agenten einander Arbeit übergeben. All das bindet er in jeden Agenten ein, den er findet. Sagen
+Sie dann in Claude Code oder Codex:
 
 ```text
 Sno onboard
 ```
 
-Ihr Agent fragt Sie zwei Dinge: welche Engine laufen soll und ob dieser Rechner mit Ihrem sno.ai-Konto
+Ihr Agent fragt Sie zwei Dinge: wie Sno arbeiten soll (welche Modelle es nutzt und was es hochlädt) und ob dieser Rechner mit Ihrem sno.ai-Konto
 verknüpft werden soll. Das ist das ganze Gespräch. Was dem Rechner fehlt, installiert Ihr Agent zuerst
 und sagt Ihnen, was er getan hat.
 
@@ -104,7 +107,7 @@ Befehl hat mehr als zwei Wörter.
 | Alle Befehle sehen | `sno` |
 | Prüfen, ob alles funktioniert | `sno doctor` |
 | Sno Station installieren oder reparieren | `sno setup` |
-| Sehen oder ändern, was dieser Rechner teilt | `sno station consent` |
+| Sehen oder ändern, was dieser Rechner hochlädt | `sno station consent` |
 | Diesen Rechner mit Ihrem Konto verknüpfen | `sno account claim` |
 | Entfernen, was `sno` installiert hat | `sno uninstall` |
 | Die Details eines Befehls lesen | `sno <command> --help` |

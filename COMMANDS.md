@@ -11,41 +11,41 @@ name works as the whole name: `sno stat cons` is `sno station consent`.
 
 | Command | What it does | Arguments |
 |---|---|---|
-| `sno setup` | Install the default or selected catalog product | `[PRODUCT]` `--reach-version` `--skills-version` `--memory-mode` `--harness` |
-| `sno init` | Initialize independent CLI state and entry skills |  |
-| `sno onboarding` | Configure and prove the selected Station installation |  |
+| `sno setup` | Install Sno Station, or another Sno product by name | `[PRODUCT]` `--reach-version` `--skills-version` `--memory-mode` `--harness` |
+| `sno init` | Set up the sno command and teach your agents to use it |  |
+| `sno onboarding` | Choose Station settings and check that they work |  |
 | `sno onboarding status` | Show installed agents, memory settings and saved choices without changing them |  |
-| `sno onboarding apply` | Configure Station using supplied choices and defaults for omitted choices | `--engine` `--writer` `--reviewer` `--daily-retrospective` |
-| `sno onboarding verify` | Write and read back a test memory and deliver a test Reach message |  |
+| `sno onboarding apply` | Save your Station choices; anything you leave out keeps its current or default value | `--engine` `--writer` `--reviewer` `--daily-retrospective` |
+| `sno onboarding verify` | Check that memory and agent-to-agent mail work, using a test memory and a test message |  |
 | `sno skills` | List agent instructions, or read one by name | `[NAME]` `--full` `--all` |
 | `sno products` | List optional product offers, or record a reply to one | `[PRODUCT]` `[ANSWER]` |
-| `sno update` | Update CLI and actually installed products | `--reach-version` `--skills-version` `--memory-mode` `--harness` `--auto` `--quiet` |
+| `sno update` | Update sno and the products you installed | `--reach-version` `--skills-version` `--memory-mode` `--harness` `--auto` `--quiet` |
 | `sno doctor` | Check CLI updates, installed products, skills and Station state |  |
 | `sno usage` | Show remaining model allowance and purchased balance |  |
 | `sno stats` | Show allowance, review catches, nightly lessons and stored memories on one page |  |
 | `sno memory` | Use memory installed for Claude, Codex or Cursor | `<ARGUMENTS>` |
-| `sno observe` | Send observability events | `<ARGUMENTS>` |
-| `sno project` | Report local project memory and recursive self-improvement records |  |
-| `sno project status` | Show recorded current contexts, memory availability and improvement outcomes |  |
-| `sno project list` | List known source project identities and shared general records |  |
+| `sno observe` | Record agent activity (used by agent hooks) | `<ARGUMENTS>` |
+| `sno project` | Show memories and nightly-review lessons for each project |  |
+| `sno project status` | Show memories and nightly-review lessons for this folder |  |
+| `sno project list` | List every project Sno has memories or lessons for |  |
 | `sno uninstall` | Uninstall one installed product, or all of them | `[PRODUCT]` `--yes` `--purge-state` |
-| `sno account` | Manage account and machine identity |  |
-| `sno account login` | Sign up or sign in and attach this computer to a SNO account | `--email` |
-| `sno account claim` | Attach this computer to a SNO account and print the link to approve it |  |
-| `sno account register` | Register this machine anonymously |  |
-| `sno rem` | Send REM runs and human verdicts to SNO |  |
-| `sno rem judge` | Send a complete REM run as JSON on stdin |  |
-| `sno rem recall` | Rank accepted lessons for a first owner message |  |
-| `sno rem verdict` | Send a linked human verdict | `<JUDGMENT_ID>` `<VERDICT>` `--all-projects` |
-| `sno station` | Manage this SNO Station |  |
-| `sno station rem-start` | Start an asynchronous local REM job | `--type` `--scope` |
-| `sno station rem-status` | Read or wait for a local REM job | `[JOB_ID]` `--wait` `--timeout` |
-| `sno station consent` | Show what this computer shares, or set it to off, metadata-only or full | `[VALUE]` |
-| `sno station pause` | Pause cloud telemetry |  |
-| `sno station resume` | Resume cloud telemetry |  |
-| `sno station export` | Export local audit events | `[PATH]` `--out` `--format` |
-| `sno station audit` | Verify a server-stored event | `[EVENT_ID]` |
-| `sno station doctor` | Check local Station identity, telemetry, buffer and configuration |  |
+| `sno account` | Link this computer to your sno.ai account |  |
+| `sno account login` | Sign up or sign in, and link this computer to your sno.ai account | `--email` |
+| `sno account claim` | Print the link that approves linking this computer to your sno.ai account |  |
+| `sno account register` | Register this computer with Sno, without an account |  |
+| `sno rem` | Send nightly-review results and your answers on lessons to Sno |  |
+| `sno rem judge` | Send a finished nightly review as JSON on stdin |  |
+| `sno rem recall` | Pick the lessons that fit a session's first message |  |
+| `sno rem verdict` | Record your accept, reject or tbd answer on a lesson | `<JUDGMENT_ID>` `<VERDICT>` `--all-projects` |
+| `sno station` | Upload settings, checks and records for Station on this computer |  |
+| `sno station rem-start` | Start a nightly-review job in the background | `--type` `--scope` |
+| `sno station rem-status` | Show or wait for a background nightly-review job | `[JOB_ID]` `--wait` `--timeout` |
+| `sno station consent` | Show what this computer uploads to Sno, or set it to off, metadata-only or full | `[VALUE]` |
+| `sno station pause` | Pause uploads to Sno until you resume them |  |
+| `sno station resume` | Resume uploads at the setting you had before pausing |  |
+| `sno station export` | Save a copy of the events this computer recorded | `[PATH]` `--out` `--format` |
+| `sno station audit` | Check that an event Sno received matches this computer's record | `[EVENT_ID]` |
+| `sno station doctor` | Check this computer's Sno ID, upload setting and event log |  |
 
 ## Actions handled by the installed memory and observability packages
 
