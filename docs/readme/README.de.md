@@ -67,7 +67,7 @@ Er installiert das gemeinsame Gedächtnis, Sno Reach, die Skills und die nächtl
 in jeden Agenten ein, den er findet. Sagen Sie dann in Claude Code oder Codex:
 
 ```text
-Sno onboarding
+Sno onboard
 ```
 
 Ihr Agent fragt Sie zwei Dinge: welche Engine laufen soll und ob dieser Rechner mit Ihrem sno.ai-Konto

@@ -63,7 +63,7 @@ Instala la memoria compartida, Sno Reach, las skills y el bucle nocturno, y los 
 agente que encuentra. Después di esto dentro de Claude Code o Codex:
 
 ```text
-Sno onboarding
+Sno onboard
 ```
 
 Tu agente te pregunta dos cosas: qué motor usar y si quieres vincular esta computadora a tu

@@ -49,7 +49,7 @@ sno setup
 它会安装共享记忆、Sno Reach、技能和夜间循环，并把它们接入它找到的每一个 agent。然后在 Claude Code 或 Codex 里说：
 
 ```text
-Sno onboarding
+Sno onboard
 ```
 
 你的 agent 会问你两件事：运行哪个引擎，以及是否把这台电脑关联到你的 sno.ai 账户。整个对话就这些。电脑缺少的任何东西，你的 agent 都会先装好，并告诉你它做了什么。

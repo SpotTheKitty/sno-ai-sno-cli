@@ -49,7 +49,7 @@ sno setup
 它會安裝共用記憶、Sno Reach、技能和夜間循環，並把它們接到它找到的每一個代理人上。接著在 Claude Code 或 Codex 裡說：
 
 ```text
-Sno onboarding
+Sno onboard
 ```
 
 您的代理人會問您兩件事：要執行哪個引擎，以及是否要把這台電腦連結到您的 sno.ai 帳號。整段對話就這樣。電腦缺少的任何東西，您的代理人都會先裝好，並告訴您它做了什麼。

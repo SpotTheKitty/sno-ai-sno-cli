@@ -63,7 +63,7 @@ It installs the shared memory, Sno Reach, the skills and the nightly loop, and w
 agent it finds. Then say this inside Claude Code or Codex:
 
 ```text
-Sno onboarding
+Sno onboard
 ```
 
 Your agent asks you two things: which engine to run, and whether to link this computer to your

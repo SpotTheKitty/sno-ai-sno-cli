@@ -67,7 +67,7 @@ Elle installe la mémoire partagée, Sno Reach, les skills et la boucle nocturne
 chaque agent qu'elle trouve. Dites ensuite ceci dans Claude Code ou Codex :
 
 ```text
-Sno onboarding
+Sno onboard
 ```
 
 Votre agent vous pose deux questions : quel moteur utiliser, et s'il faut lier cet ordinateur à votre
