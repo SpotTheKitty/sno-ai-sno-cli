@@ -5,7 +5,7 @@ with examples.
 
 Every command accepts `--json` (exactly one JSON value on stdout) and `--help`. A command with a missing or wrong
 argument prints guidance and exits 0 without running; a real failure exits non-zero. A unique start of a command
-name works as the whole name: `sno stat cons` is `sno station consent`.
+name works as the whole name: `sno stati cons` is `sno station consent`.
 
 ## Commands
 
