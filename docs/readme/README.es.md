@@ -24,7 +24,7 @@ Codex `install sno.ai from GitHub` y encontrará esta página, ejecutará la ins
 
 **Tú eliges qué sube.** `sno station consent` muestra qué sube esta computadora a Sno, y
 lo cambia con una palabra. `off` no sube nada. `metadata-only` sube solo cifras de uso. `full`, la opción
-por defecto, sube además las sesiones y las skills que lee tu repaso nocturno, y fragmentos breves para
+por defecto, sube además las sesiones y las skills que lee Self Learning, y fragmentos breves para
 revisión. Lo que sube sigue siendo tuyo: solo los programas propios de Sno lo procesan, solo para ti, y nadie
 más lo ve. Tu memoria se queda en tu computadora en cualquier caso.
 
@@ -62,7 +62,7 @@ que ya tienes abierta.
 sno setup
 ```
 
-Instala la memoria compartida, las skills, el repaso nocturno y los mensajes con los que tus agentes se
+Instala la memoria compartida, las skills, Self Learning y los mensajes con los que tus agentes se
 pasan el trabajo. Conecta todo eso a cada agente que encuentra. Después di esto dentro de Claude Code o Codex:
 
 ```text
@@ -75,7 +75,8 @@ lo instala primero y te dice qué hizo.
 
 ## Conecta tu cuenta de sno.ai
 
-*Última actualización 2026-10-08.* Opcional. Todo funciona sin cuenta. Conéctala para ver en tu
+*Última actualización 2026-10-08.* Esta computadora recibe una décima parte de la cuota gratuita hasta que la vincules: sno account claim.
+Vincularla es gratis. Conéctala para ver en tu
 [panel de sno.ai](https://www.sno.ai/dashboard) lo que tus agentes hicieron por ti: qué detectaron
 sus revisiones, qué aprendieron durante la noche y cuánto tiempo siguieron trabajando.
 

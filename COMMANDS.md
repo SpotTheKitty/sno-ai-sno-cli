@@ -21,25 +21,25 @@ name works as the whole name: `sno stati cons` is `sno station consent`.
 | `sno products` | List optional product offers, or record a reply to one | `[PRODUCT]` `[ANSWER]` |
 | `sno update` | Update sno and the products you installed | `--reach-version` `--skills-version` `--memory-mode` `--harness` `--auto` `--quiet` |
 | `sno doctor` | Check CLI updates, installed products, skills and Station state |  |
-| `sno usage` | Show remaining model allowance and purchased balance |  |
-| `sno stats` | Show allowance, review catches, nightly lessons and stored memories on one page |  |
+| `sno usage` | Show the remaining weekly allowance and your balance |  |
+| `sno stats` | Show allowance, review catches, Self Learning lessons and stored memories on one page |  |
 | `sno memory` | Use memory installed for Claude, Codex or Cursor | `<ARGUMENTS>` |
 | `sno observe` | Record agent activity (used by agent hooks) | `<ARGUMENTS>` |
-| `sno project` | Show memories and nightly-review lessons for each project |  |
-| `sno project status` | Show memories and nightly-review lessons for this folder |  |
+| `sno project` | Show memories and Self Learning lessons for each project |  |
+| `sno project status` | Show memories and Self Learning lessons for this folder |  |
 | `sno project list` | List every project Sno has memories or lessons for |  |
 | `sno uninstall` | Uninstall one installed product, or all of them | `[PRODUCT]` `--yes` `--purge-state` |
 | `sno account` | Link this computer to your sno.ai account |  |
 | `sno account login` | Sign up or sign in, and link this computer to your sno.ai account | `--email` |
 | `sno account claim` | Print the link that approves linking this computer to your sno.ai account |  |
 | `sno account register` | Register this computer with Sno, without an account |  |
-| `sno rem` | Send nightly-review results and your answers on lessons to Sno |  |
-| `sno rem judge` | Send a finished nightly review as JSON on stdin |  |
+| `sno rem` | Send Self Learning results and your answers on lessons to Sno |  |
+| `sno rem judge` | Send a finished Self Learning as JSON on stdin |  |
 | `sno rem recall` | Pick the lessons that fit a session's first message |  |
 | `sno rem verdict` | Record your accept, reject or tbd answer on a lesson | `<JUDGMENT_ID>` `<VERDICT>` `--all-projects` |
 | `sno station` | Upload settings, checks and records for Station on this computer |  |
-| `sno station rem-start` | Start a nightly-review job in the background | `--type` `--scope` |
-| `sno station rem-status` | Show or wait for a background nightly-review job | `[JOB_ID]` `--wait` `--timeout` |
+| `sno station rem-start` | Start a memory maintenance job in the background | `--type` `--scope` |
+| `sno station rem-status` | Show or wait for a background memory maintenance job | `[JOB_ID]` `--wait` `--timeout` |
 | `sno station consent` | Show what this computer uploads to Sno, or set it to off, metadata-only or full | `[VALUE]` |
 | `sno station pause` | Pause uploads to Sno until you resume them |  |
 | `sno station resume` | Resume uploads at the setting you had before pausing |  |
@@ -79,7 +79,7 @@ name works as the whole name: `sno stati cons` is `sno station consent`.
 | `sno deliver-proof` | Prove a work-order step by running a command and recording the result |
 | `sno handoff-checkpoint` | Write and verify the progress record that lets another agent take over |
 | `sno medic` | Check the agent team on this machine; repairs nothing |
-| `sno rem-reflect` | The nightly self-reflection program and its lesson commands |
+| `sno rem-reflect` | The Self Learning program and its lesson commands |
 | `sno rotate-agent-resume` | Move a job to the other agent and verify it resumed |
 
 ## Not Sno commands

@@ -24,7 +24,7 @@ Codex `install sno.ai from GitHub` and it finds this page, runs the install, and
 
 **You choose what it uploads.** `sno station consent` shows what this computer uploads to Sno, and
 changes it with one word. `off` uploads nothing. `metadata-only` uploads usage counts only. `full`, the
-default, also uploads the sessions and skills your nightly review reads, and short excerpts for review.
+default, also uploads the sessions and skills Self Learning reads, and short excerpts for review.
 What it uploads stays yours: only Sno's own programs process it, for you alone, and nobody else sees it.
 Your memory stays on your computer either way.
 
@@ -62,7 +62,7 @@ are in.
 sno setup
 ```
 
-It installs the shared memory, the skills, the nightly review, and the messaging your agents use to
+It installs the shared memory, the skills, Self Learning, and the messaging your agents use to
 pass work to each other. It wires all of them into every agent it finds. Then say this inside Claude
 Code or Codex:
 
@@ -76,7 +76,8 @@ installs first and tells you what it did.
 
 ## Connect your sno.ai account
 
-*Last updated 2026-10-08.* Optional. Everything works without an account. Connect to see on your
+*Last updated 2026-10-08.* This computer gets one tenth of the free allowance until you link it: sno account claim.
+Linking is free. Connect to see on your
 [sno.ai dashboard](https://www.sno.ai/dashboard) what your agents did for you: what their reviews
 caught, what they learned overnight, and how long they kept working.
 

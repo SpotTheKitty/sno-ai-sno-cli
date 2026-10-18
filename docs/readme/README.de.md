@@ -26,7 +26,7 @@ alles ein.
 
 **Sie entscheiden, was hochgeladen wird.** `sno station consent` zeigt, was dieser Rechner zu Sno hochlädt, und
 ändert es mit einem Wort. `off` lädt nichts hoch. `metadata-only` lädt nur Nutzungszahlen hoch. `full`, die
-Voreinstellung, lädt außerdem die Sitzungen und Skills hoch, die Ihr nächtlicher Rückblick liest, und kurze
+Voreinstellung, lädt außerdem die Sitzungen und Skills hoch, die Self Learning liest, und kurze
 Auszüge zur Prüfung. Was hochgeladen wird, bleibt Ihres: Nur Snos eigene Programme verarbeiten es, nur für
 Sie, und niemand sonst sieht es. Ihr Gedächtnis bleibt in jedem Fall auf Ihrem Rechner.
 
@@ -65,7 +65,7 @@ von ihnen:
 sno setup
 ```
 
-Er installiert das gemeinsame Gedächtnis, die Skills, den nächtlichen Rückblick und die Nachrichten, mit
+Er installiert das gemeinsame Gedächtnis, die Skills, Self Learning und die Nachrichten, mit
 denen Ihre Agenten einander Arbeit übergeben. All das bindet er in jeden Agenten ein, den er findet. Sagen
 Sie dann in Claude Code oder Codex:
 
@@ -79,7 +79,8 @@ und sagt Ihnen, was er getan hat.
 
 ## Ihr sno.ai-Konto verbinden
 
-*Zuletzt aktualisiert am 2026-10-08.* Optional. Alles funktioniert ohne Konto. Verbinden Sie es, um auf
+*Zuletzt aktualisiert am 2026-10-08.* Bis Sie diesen Rechner verknüpfen, erhält er ein Zehntel des kostenlosen Kontingents: sno account claim.
+Das Verknüpfen ist kostenlos. Verbinden Sie ihn, um auf
 Ihrem [sno.ai-Dashboard](https://www.sno.ai/dashboard) zu sehen, was Ihre Agenten für Sie getan haben:
 was ihre Reviews gefunden haben, was sie über Nacht gelernt haben und wie lange sie durchgearbeitet haben.
 

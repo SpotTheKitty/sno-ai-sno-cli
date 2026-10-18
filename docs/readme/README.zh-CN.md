@@ -15,7 +15,7 @@
 
 **你的 agent 可以替你完成。** 你完全不必打开终端。对 Claude Code 或 Codex 说 `install sno.ai from GitHub`，它会找到这个页面，运行安装，并把一切设置好。
 
-**你来决定它上传什么。** `sno station consent` 会显示这台电脑上传到 Sno 的内容，并且只用一个词就能修改。`off` 什么都不上传。`metadata-only` 只上传使用次数这类统计。`full`（默认）还会上传每晚复盘读到的对话记录和技能，以及一小段供评审的对话摘录。上传的内容仍然归你所有，只由 Sno 自己的程序为你处理，不会给任何人看。无论选哪一种，你的记忆都留在你的电脑上。
+**你来决定它上传什么。** `sno station consent` 会显示这台电脑上传到 Sno 的内容，并且只用一个词就能修改。`off` 什么都不上传。`metadata-only` 只上传使用次数这类统计。`full`（默认）还会上传自我学习读到的对话记录和技能，以及一小段供评审的对话摘录。上传的内容仍然归你所有，只由 Sno 自己的程序为你处理，不会给任何人看。无论选哪一种，你的记忆都留在你的电脑上。
 
 ![工作原理：你说一行命令或一句话，你的电脑上运行一条命令，你得到三样东西](../images/how-it-works.png)
 
@@ -46,7 +46,7 @@ sh -c 'sno_installer_body=$(curl -fsSL https://sno.ai/install) && printf "%s\n" 
 sno setup
 ```
 
-它会安装共享记忆、技能、每晚复盘，以及 agent 之间互相传递工作用的消息功能，并把它们接入它找到的每一个 agent。然后在 Claude Code 或 Codex 里说：
+它会安装共享记忆、技能、自我学习，以及 agent 之间互相传递工作用的消息功能，并把它们接入它找到的每一个 agent。然后在 Claude Code 或 Codex 里说：
 
 ```text
 Sno onboard
@@ -56,7 +56,7 @@ Sno onboard
 
 ## 连接你的 sno.ai 账户
 
-*最后更新于 2026-10-08。* 可选。没有账户，一切照常可用。连接之后，你可以在 [sno.ai 控制台](https://www.sno.ai/dashboard) 上看到你的 agent 为你做了什么：它们的审查发现了什么，它们在夜里学到了什么，以及它们持续工作了多久。
+*最后更新于 2026-10-08。* 这台电脑在绑定前只有免费额度的十分之一：sno account claim。绑定免费。连接之后，你可以在 [sno.ai 控制台](https://www.sno.ai/dashboard) 上看到你的 agent 为你做了什么：它们的审查发现了什么，它们在夜里学到了什么，以及它们持续工作了多久。
 
 **还没有账户。** Onboarding 会显示一个只为这台电脑生成的链接。打开它，注册，然后点击 Approve。或者把你的邮箱告诉你的 agent：它会运行 `sno account login --email you@example.com`，你只需登录一次。
 

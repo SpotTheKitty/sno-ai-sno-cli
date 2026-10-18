@@ -26,7 +26,7 @@ configure tout.
 
 **Vous choisissez ce qui est envoyé.** `sno station consent` montre ce que cet ordinateur envoie à
 Sno, et le change en un mot. `off` n'envoie rien. `metadata-only` n'envoie que des chiffres d'utilisation.
-`full`, le réglage par défaut, envoie aussi les sessions et les skills que lit votre bilan de la nuit, et de
+`full`, le réglage par défaut, envoie aussi les sessions et les skills que lit Self Learning, et de
 courts extraits à examiner. Ce qui est envoyé reste à vous : seuls les programmes de Sno le traitent, pour
 vous seul, et personne d'autre ne le voit. Votre mémoire reste sur votre ordinateur dans tous les cas.
 
@@ -65,7 +65,7 @@ chacun d'eux :
 sno setup
 ```
 
-Elle installe la mémoire partagée, les skills, le bilan de la nuit et les messages par lesquels vos agents
+Elle installe la mémoire partagée, les skills, Self Learning et les messages par lesquels vos agents
 se passent le travail. Elle branche le tout sur chaque agent qu'elle trouve. Dites ensuite ceci dans
 Claude Code ou Codex :
 
@@ -80,7 +80,8 @@ d'abord et vous dit ce qu'il a fait.
 
 ## Connecter votre compte sno.ai
 
-*Dernière mise à jour le 2026-10-08.* Facultatif. Tout fonctionne sans compte. Connectez-vous pour voir
+*Dernière mise à jour le 2026-10-08.* Cet ordinateur reçoit un dixième du quota gratuit tant que vous ne le liez pas : sno account claim.
+La liaison est gratuite. Connectez-vous pour voir
 sur votre [tableau de bord sno.ai](https://www.sno.ai/dashboard) ce que vos agents ont fait pour vous :
 ce que leurs révisions ont repéré, ce qu'ils ont appris pendant la nuit et combien de temps ils ont
 continué à travailler.
