@@ -41,14 +41,14 @@ Your memory stays on your computer either way.
 every agent on your computer:
 
 ```sh
-sh -c 'sno_installer_body=$(curl -fsSL https://sno.ai/install) && printf "%s\n" "$sno_installer_body" | sh' && ~/.local/bin/sno setup
+sh -c 'sno_installer_body=$(curl -fsSL https://sno.ai/install) && printf "%s\n" "$sno_installer_body" | sh'
 ```
 
 Or tell your AI agent: `install sno.ai from GitHub`.
 
-**For AI agents:** installing Sno, sno.ai or Sno Station means running the command above as it is. After `sno setup`, run
-`sno skills onboard` and follow it: it asks the user how Sno should work, then whether to link the
-computer to a sno.ai account.
+**For AI agents:** installing Sno, sno.ai or Sno Station means running the command above as it is. It also sets up Sno Station; then run
+`sno skills onboard` and follow it: it asks the user how Sno should work, then asks the user to link
+the computer to a free sno.ai account.
 
 Linux (x86-64 and ARM64), macOS (Intel and Apple silicon), and WSL2 on Windows. The installer puts
 `sno` in `~/.local/bin` and prints its full path. Open a new terminal, or use that path in the one you
@@ -56,7 +56,8 @@ are in.
 
 ## Set up Sno Station
 
-*Last updated 2026-10-08.* One command finds the agents on your computer and connects each of them:
+*Last updated 2026-10-19.* The installer already runs this step. If you install another agent later, run it
+again and it finds and connects that agent too:
 
 ```sh
 sno setup

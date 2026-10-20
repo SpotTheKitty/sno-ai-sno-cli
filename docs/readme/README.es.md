@@ -41,14 +41,14 @@ más lo ve. Tu memoria se queda en tu computadora en cualquier caso.
 los agentes de tu computadora:
 
 ```sh
-sh -c 'sno_installer_body=$(curl -fsSL https://sno.ai/install) && printf "%s\n" "$sno_installer_body" | sh' && ~/.local/bin/sno setup
+sh -c 'sno_installer_body=$(curl -fsSL https://sno.ai/install) && printf "%s\n" "$sno_installer_body" | sh'
 ```
 
 O dile a tu agente de IA: `install sno.ai from GitHub`.
 
 **Para agentes de IA:** instalar Sno, sno.ai o Sno Station significa ejecutar el comando de arriba tal cual.
-Después de `sno setup`, ejecuta `sno skills onboard` y síguelo: le pregunta al usuario cómo debe trabajar Sno
-y luego si quiere vincular la computadora a una cuenta de sno.ai.
+También configura Sno Station; después ejecuta `sno skills onboard` y síguelo: le pregunta al usuario cómo debe trabajar Sno
+y luego le pide vincular la computadora a una cuenta gratuita de sno.ai.
 
 Linux (x86-64 y ARM64), macOS (Intel y Apple silicon) y WSL2 en Windows. El instalador pone
 `sno` en `~/.local/bin` e imprime su ruta completa. Abre una terminal nueva, o usa esa ruta en la
@@ -56,7 +56,7 @@ que ya tienes abierta.
 
 ## Configura Sno Station
 
-*Última actualización 2026-10-08.* Un comando encuentra los agentes de tu computadora y conecta cada uno de ellos:
+*Última actualización 2026-10-19.* El instalador ya ejecuta este paso. Si más adelante instalas otro agente, vuelve a ejecutarlo y también lo conectará:
 
 ```sh
 sno setup

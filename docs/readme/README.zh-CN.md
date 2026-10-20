@@ -29,18 +29,18 @@
 *最后更新于 2026-10-08。* 一条命令，在任何终端里运行。它会先安装 `sno`，再安装 Sno Station，并连接你电脑上的所有 agent：
 
 ```sh
-sh -c 'sno_installer_body=$(curl -fsSL https://sno.ai/install) && printf "%s\n" "$sno_installer_body" | sh' && ~/.local/bin/sno setup
+sh -c 'sno_installer_body=$(curl -fsSL https://sno.ai/install) && printf "%s\n" "$sno_installer_body" | sh'
 ```
 
 或者告诉你的 AI agent：`install sno.ai from GitHub`。
 
-**给 AI agent：** 安装 Sno、sno.ai 或 Sno Station，指的都是原样运行上面这条命令。`sno setup` 之后，运行 `sno skills onboard` 并按它的指引操作：它会先问用户想让 Sno 怎么工作，再问是否把这台电脑关联到 sno.ai 账户。
+**给 AI agent：** 安装 Sno、sno.ai 或 Sno Station，指的都是原样运行上面这条命令。这条命令也会装好 Sno Station；接着运行 `sno skills onboard` 并按它的指引操作：它会先问用户想让 Sno 怎么工作，再请用户把这台电脑绑定到免费的 sno.ai 账户。
 
 支持 Linux（x86-64 和 ARM64）、macOS（Intel 和 Apple silicon），以及 Windows 上的 WSL2。安装程序会把 `sno` 放到 `~/.local/bin`，并打印它的完整路径。打开一个新终端，或者在当前终端里使用这个路径。
 
 ## 设置 Sno Station
 
-*最后更新于 2026-10-08。* 一条命令就能找到你电脑上的 agent，并逐一连接它们：
+*最后更新于 2026-10-19。* 安装程序已经替你跑过这一步。以后装了新的 agent，再运行一次，它就会把新的 agent 也连上：
 
 ```sh
 sno setup

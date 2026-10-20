@@ -41,14 +41,14 @@ Codex `install sno.ai from GitHub`, и он найдёт эту страницу
 всех агентов на вашем компьютере:
 
 ```sh
-sh -c 'sno_installer_body=$(curl -fsSL https://sno.ai/install) && printf "%s\n" "$sno_installer_body" | sh' && ~/.local/bin/sno setup
+sh -c 'sno_installer_body=$(curl -fsSL https://sno.ai/install) && printf "%s\n" "$sno_installer_body" | sh'
 ```
 
 Или скажите своему AI-агенту: `install sno.ai from GitHub`.
 
-**Для AI-агентов:** установить Sno, sno.ai или Sno Station значит выполнить команду выше как есть. После
-`sno setup` запустите `sno skills onboard` и следуйте ему: он спросит пользователя, как должен
-работать Sno, а затем, привязывать ли компьютер к аккаунту sno.ai.
+**Для AI-агентов:** установить Sno, sno.ai или Sno Station значит выполнить команду выше как есть. Она
+также настраивает Sno Station; затем запустите `sno skills onboard` и следуйте ему: он спросит пользователя, как должен
+работать Sno, а затем предложит привязать компьютер к бесплатному аккаунту sno.ai.
 
 Linux (x86-64 и ARM64), macOS (Intel и Apple silicon) и WSL2 в Windows. Установщик помещает
 `sno` в `~/.local/bin` и выводит его полный путь. Откройте новый терминал или используйте этот путь
@@ -56,7 +56,7 @@ Linux (x86-64 и ARM64), macOS (Intel и Apple silicon) и WSL2 в Windows. Ус
 
 ## Настройка Sno Station
 
-*Обновлено 2026-10-08.* Одна команда находит агентов на вашем компьютере и подключает каждого из них:
+*Обновлено 2026-10-19.* Установщик уже выполняет этот шаг. Если позже вы установите другого агента, запустите его снова, и он подключит и этого агента:
 
 ```sh
 sno setup

@@ -43,14 +43,14 @@ Sie, und niemand sonst sieht es. Ihr Gedächtnis bleibt in jedem Fall auf Ihrem 
 jeden Agenten auf Ihrem Rechner:
 
 ```sh
-sh -c 'sno_installer_body=$(curl -fsSL https://sno.ai/install) && printf "%s\n" "$sno_installer_body" | sh' && ~/.local/bin/sno setup
+sh -c 'sno_installer_body=$(curl -fsSL https://sno.ai/install) && printf "%s\n" "$sno_installer_body" | sh'
 ```
 
 Oder sagen Sie Ihrem KI-Agenten: `install sno.ai from GitHub`.
 
 **Für KI-Agenten:** Sno, sno.ai oder Sno Station zu installieren heißt, den Befehl oben unverändert auszuführen.
-Führen Sie nach `sno setup` den Befehl `sno skills onboard` aus und folgen Sie ihm: Er fragt den Nutzer,
-wie Sno arbeiten soll, und dann, ob der Rechner mit einem sno.ai-Konto verknüpft werden soll.
+Er richtet auch Sno Station ein. Führen Sie danach `sno skills onboard` aus und folgen Sie ihm: Er fragt den Nutzer,
+wie Sno arbeiten soll, und bittet dann, den Rechner mit einem kostenlosen sno.ai-Konto zu verknüpfen.
 
 Linux (x86-64 und ARM64), macOS (Intel und Apple Silicon) und WSL2 unter Windows. Der Installer legt
 `sno` in `~/.local/bin` ab und gibt den vollständigen Pfad aus. Öffnen Sie ein neues Terminal, oder
@@ -58,8 +58,8 @@ verwenden Sie diesen Pfad in dem, in dem Sie gerade sind.
 
 ## Sno Station einrichten
 
-*Zuletzt aktualisiert am 2026-10-08.* Ein Befehl findet die Agenten auf Ihrem Rechner und verbindet jeden
-von ihnen:
+*Zuletzt aktualisiert am 2026-10-19.* Der Installer führt diesen Schritt bereits aus. Wenn Sie später einen weiteren
+Agenten installieren, führen Sie ihn erneut aus, dann wird auch dieser verbunden:
 
 ```sh
 sno setup
