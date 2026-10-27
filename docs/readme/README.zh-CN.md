@@ -9,7 +9,7 @@
 
 **Read in other languages:** [English](../../README.md) · **中文** · [Deutsch](README.de.md) · [Español](README.es.md) · [Français](README.fr.md) · [Русский](README.ru.md) · [한국어](README.ko.md) · [日本語](README.ja.md) · [繁體中文](README.zh-TW.md)
 
-`sno` 是一条命令，它把 [Sno Station](https://github.com/sno-ai/sno-station) 装到你的电脑上，并让它一直留在那里。Sno Station 把你已经在用的 agent 变成一支团队。Claude Code、Codex、OpenClaw 和 Hermes Agent 共享同一份记忆，互相传递工作，并在工作到达你手里之前互相检查。每天晚上，它们会回顾这一天，然后变得更好一点。这一切都通过 `sno` 来到你的电脑上。你只需安装一次。之后你基本会忘记它的存在。
+`sno` 是一条命令，它把 [Sno Station](https://github.com/sno-ai/sno-station) 装到你的电脑上，并让它一直留在那里。Sno Station 把你已经在用的 agent 变成一支团队。Claude Code、Codex、OpenClaw 和 Hermes Agent 共享同一份记忆，互相传递工作，并在工作到达你手里之前互相检查。每天晚上，它们会回顾这一天，然后变得更好一点。这一切都通过 `sno` 来到你的电脑上。你只需安装一次。之后你基本会忘记它的存在。更多介绍见官网 [sno.ai](https://sno.ai)。
 
 **什么都不用记。** 没有更新这一步。每天你运行的第一条 `sno` 命令会检查有没有新版本，把它装好，然后再做你要求的事。你的 agent 也会以同样的方式拿到新版本，不需要你动手。
 

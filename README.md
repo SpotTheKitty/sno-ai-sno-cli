@@ -13,7 +13,7 @@
 and keeps it there. Sno Station turns the agents you already use into a team. Claude Code, Codex,
 OpenClaw and Hermes Agent share one memory, pass work to each other, and check each other's work
 before it reaches you. Every night they look back at the day and get a little better.
-`sno` is how all of that arrives. You install it once. After that you mostly forget it's there.
+`sno` is how all of that arrives. You install it once. After that you mostly forget it's there. Find out more on our website, [sno.ai](https://sno.ai).
 
 **Nothing to remember.** There is no update step. Once a day, the first `sno` command you run checks
 for a new release, installs it, and then does what you asked. Your agents get the new version the

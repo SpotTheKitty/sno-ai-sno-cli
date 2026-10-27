@@ -9,7 +9,7 @@
 
 **Read in other languages:** [English](../../README.md) · [中文](README.zh-CN.md) · [Deutsch](README.de.md) · [Español](README.es.md) · [Français](README.fr.md) · [Русский](README.ru.md) · [한국어](README.ko.md) · **日本語** · [繁體中文](README.zh-TW.md)
 
-`sno` は、[Sno Station](https://github.com/sno-ai/sno-station) をあなたのコンピューターにインストールし、そのあとも維持し続けるひとつのコマンドです。Sno Station は、あなたがすでに使っているエージェントたちをひとつのチームに変えます。Claude Code、Codex、OpenClaw、Hermes Agent がひとつのメモリを共有し、作業を互いに引き渡し、あなたに届く前に互いの作業をチェックします。毎晩、彼らはその日を振り返り、少しずつ良くなります。そのすべてを届けるのが `sno` です。インストールは一度だけです。そのあとは、ほとんどその存在を忘れていられます。
+`sno` は、[Sno Station](https://github.com/sno-ai/sno-station) をあなたのコンピューターにインストールし、そのあとも維持し続けるひとつのコマンドです。Sno Station は、あなたがすでに使っているエージェントたちをひとつのチームに変えます。Claude Code、Codex、OpenClaw、Hermes Agent がひとつのメモリを共有し、作業を互いに引き渡し、あなたに届く前に互いの作業をチェックします。毎晩、彼らはその日を振り返り、少しずつ良くなります。そのすべてを届けるのが `sno` です。インストールは一度だけです。そのあとは、ほとんどその存在を忘れていられます。詳しくは公式サイト [sno.ai](https://sno.ai) をご覧ください。
 
 **覚えておくことはありません。** 更新の手順はありません。1日に一度、最初に実行した `sno` コマンドが新しいリリースを確認してインストールし、それから頼まれたことを実行します。エージェントたちも同じように、あなたの手を借りずに新しいバージョンを受け取ります。
 

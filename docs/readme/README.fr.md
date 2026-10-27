@@ -14,7 +14,7 @@ ordinateur et l'y maintient. Sno Station transforme les agents que vous utilisez
 Claude Code, Codex, OpenClaw et Hermes Agent partagent une seule mémoire, se passent le travail et
 vérifient le travail les uns des autres avant qu'il ne vous parvienne. Chaque nuit, ils reviennent sur
 la journée et s'améliorent un peu. C'est par `sno` que tout cela arrive. Vous l'installez une fois.
-Ensuite, vous oubliez presque qu'il est là.
+Ensuite, vous oubliez presque qu'il est là. Pour en savoir plus, consultez notre site [sno.ai](https://sno.ai).
 
 **Rien à retenir.** Il n'y a pas d'étape de mise à jour. Une fois par jour, la première commande `sno`
 que vous lancez vérifie s'il existe une nouvelle version, l'installe, puis fait ce que vous avez demandé.

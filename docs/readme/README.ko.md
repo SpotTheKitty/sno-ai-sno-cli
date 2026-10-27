@@ -9,7 +9,7 @@
 
 **Read in other languages:** [English](../../README.md) · [中文](README.zh-CN.md) · [Deutsch](README.de.md) · [Español](README.es.md) · [Français](README.fr.md) · [Русский](README.ru.md) · **한국어** · [日本語](README.ja.md) · [繁體中文](README.zh-TW.md)
 
-`sno`는 [Sno Station](https://github.com/sno-ai/sno-station)을 여러분의 컴퓨터에 설치하고 계속 유지해 주는 하나의 명령입니다. Sno Station은 여러분이 이미 사용하는 에이전트들을 하나의 팀으로 만듭니다. Claude Code, Codex, OpenClaw, Hermes Agent가 하나의 메모리를 공유하고, 서로 작업을 넘겨주며, 결과가 여러분에게 도달하기 전에 서로의 작업을 확인합니다. 매일 밤 이들은 하루를 돌아보고 조금씩 나아집니다. 이 모든 것을 가져다주는 것이 `sno`입니다. 한 번만 설치하면 됩니다. 그 후에는 대부분 그 존재를 잊게 됩니다.
+`sno`는 [Sno Station](https://github.com/sno-ai/sno-station)을 여러분의 컴퓨터에 설치하고 계속 유지해 주는 하나의 명령입니다. Sno Station은 여러분이 이미 사용하는 에이전트들을 하나의 팀으로 만듭니다. Claude Code, Codex, OpenClaw, Hermes Agent가 하나의 메모리를 공유하고, 서로 작업을 넘겨주며, 결과가 여러분에게 도달하기 전에 서로의 작업을 확인합니다. 매일 밤 이들은 하루를 돌아보고 조금씩 나아집니다. 이 모든 것을 가져다주는 것이 `sno`입니다. 한 번만 설치하면 됩니다. 그 후에는 대부분 그 존재를 잊게 됩니다. 자세한 내용은 공식 웹사이트 [sno.ai](https://sno.ai)에서 볼 수 있습니다.
 
 **기억할 것이 없습니다.** 업데이트 단계는 없습니다. 하루에 한 번, 여러분이 처음 실행하는 `sno` 명령이 새 릴리스를 확인하고 설치한 다음, 요청한 일을 수행합니다. 에이전트들도 같은 방식으로, 여러분 없이 새 버전을 받습니다.
 

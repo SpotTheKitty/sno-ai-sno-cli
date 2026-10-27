@@ -14,7 +14,7 @@ bringt und dort hält. Sno Station macht aus den Agenten, die Sie bereits nutzen
 Codex, OpenClaw und Hermes Agent teilen sich ein Gedächtnis, geben einander Arbeit weiter und prüfen
 gegenseitig ihre Arbeit, bevor sie bei Ihnen ankommt. Jede Nacht blicken sie auf den Tag zurück und
 werden ein wenig besser. Über `sno` kommt all das zu Ihnen. Sie installieren es einmal. Danach vergessen
-Sie meist, dass es da ist.
+Sie meist, dass es da ist. Mehr dazu auf unserer Website [sno.ai](https://sno.ai).
 
 **Nichts zu merken.** Es gibt keinen Update-Schritt. Einmal am Tag prüft der erste `sno`-Befehl, den Sie
 ausführen, ob es ein neues Release gibt, installiert es und tut dann, worum Sie gebeten haben. Ihre
